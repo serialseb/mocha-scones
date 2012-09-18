@@ -1,0 +1,5 @@
+--require should
+--ui ./src/index.js
+--compilers coffee:coffee-script
+--reporter spec
+--recursive
