@@ -17,7 +17,7 @@ module.exports = mocha.interfaces['scones'] = (suite)=>
       fn()
       suites.shift()
 
-    context.Feature = (message, fn) =>
+    context.Feature = context.Scenario = (message, fn) =>
       suite = Suite.create(suites[0], message)
       suite.scone_type = 'Feature'
       suites.unshift(suite)
@@ -32,3 +32,6 @@ module.exports = mocha.interfaces['scones'] = (suite)=>
 
     context.Then = (message, fn) =>
       Step suites[0],'Then ' + message, fn
+
+    context.And = (message, fn) =>
+      Step suites[0], 'And ' + message, fn
