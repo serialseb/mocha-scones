@@ -10,7 +10,7 @@
     "coffee-script": "*"
   },
   "devDependencies": {
-    "mocha": "https://github.com/serialseb/mocha/tarball/master",
+    "mocha": "https://github.com/serialseb/mocha/tarball/pluggable_ui",
     "should": "~0.6.3"
   },
   "keywords": [
