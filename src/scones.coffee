@@ -35,3 +35,15 @@ module.exports = mocha.interfaces['scones'] = (suite)=>
 
     context.And = (message, fn) =>
       Step suites[0], 'And ' + message, fn
+
+    context.before = (fn) ->
+      suites[0].beforeAll(fn)
+
+    context.after = (fn) ->
+      suites[0].afterAll(fn)
+
+    context.beforeEach = (fn) ->
+      suites[0].beforeEach(fn)
+
+    context.afterEach = (fn) ->
+      suites[0].afterEach(fn)

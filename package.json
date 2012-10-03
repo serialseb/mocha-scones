@@ -1,6 +1,6 @@
 {
   "name": "mocha-scones",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A bdd UI for Mocha, with all the goodness of british bakery.",
   "author": {
     "name": "Sebastien Lambla",
